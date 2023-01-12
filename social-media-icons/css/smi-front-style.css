@@ -1,0 +1,84 @@
+.smi-preview {
+	--smi-column-gap: 10px;
+    --smi-row-gap: 15px;
+    --smi-color: #3c434a;
+    --smi-border-width: 0px;
+    --smi-border-color: #3c434a;
+    --smi-border-hover-color: #3c434a;
+    --smi-border-radius: 50%;
+    --smi-font-size: 30px;
+    --smi-padding-top: 5px;
+    --smi-padding-right: 5px;
+    --smi-padding-bottom: 5px;
+    --smi-padding-left: 5px;
+    --smi-width: unset;
+    --smi-hover-color: #7b7b7b;
+    --smi-bg-color: unset;
+    --smi-bg-hover-color: unset;
+    --smi-horizontal-alignment: center;
+    --smi-vertical-alignment: unset;
+    --smi-hover-transition-time: 1s;
+    --smi-layout: row;
+    --smi-icons-wrap: wrap;
+}
+
+.smi-preview * {
+	box-sizing: unset;
+}
+
+.smi-preview ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: var(--smi-vertical-alignment);
+	justify-content: var(--smi-horizontal-alignment);
+	column-gap: var(--smi-column-gap);
+	row-gap: var(--smi-row-gap);
+	flex-wrap: var(--smi-icons-wrap);
+    flex-direction: var(--smi-layout);
+}
+
+.smi-preview ul li {
+	margin: 0;
+}
+
+.smi-preview ul li a {
+	color: var(--smi-color);
+	border: var(--smi-border-width) solid var(--smi-border-color);
+	border-radius: var(--smi-border-radius);
+	min-width: var(--smi-width);
+	max-width: var(--smi-width);
+	padding: var(--smi-padding-top) var(--smi-padding-right) var(--smi-padding-bottom) var(--smi-padding-left);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--smi-bg-color);
+	transition: all var(--smi-hover-transition-time) ease;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.smi-preview ul li:hover a {
+	color: var(--smi-hover-color) !important;
+	background-color: var(--smi-bg-hover-color);
+	border-color: var(--smi-border-hover-color);
+}
+
+.smi-preview ul li.icon-image a {
+	width: var(--smi-font-size);
+	height: var(--smi-font-size);
+	min-height: var(--smi-font-size);
+}
+
+.smi-preview ul li i {
+	font-size: var(--smi-font-size);
+	line-height: 1;
+	display: block;
+}
+
+.smi-preview ul li img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}

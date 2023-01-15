@@ -54,11 +54,6 @@
 	display: block;
 }
 
-.smi-preview .smi-preview-wrapper {
-	border: 1px solid;
-	margin: 20px 0;
-}
-
 .smi-preview h3 ,
 .smi-metabox h3 {
 	font-size: 20px;
@@ -69,10 +64,16 @@
 	margin-bottom: 0;
 }
 
-.smi-preview .smi-preview-wrapper ul {
-	padding: 30px;
+.smi-preview .smi-preview-wrapper {
+	border: 1px solid;
+	margin: 20px 0;
 	max-height: 250px;
     overflow-y: auto;
+    height: 100%;
+}
+
+.smi-preview .smi-preview-wrapper ul {
+	padding: 30px;
 	margin: 0;
 	display: flex;
 	align-items: var(--smi-vertical-alignment);

@@ -49,7 +49,10 @@
 	border-radius: var(--smi-border-radius);
 	min-width: var(--smi-width);
 	max-width: var(--smi-width);
-	padding: var(--smi-padding-top) var(--smi-padding-right) var(--smi-padding-bottom) var(--smi-padding-left);
+	padding-top: var(--smi-padding-top);
+	padding-right: var(--smi-padding-right);
+	padding-bottom: var(--smi-padding-bottom);
+	padding-left: var(--smi-padding-left);
 	display: flex;
 	align-items: center;
 	justify-content: center;

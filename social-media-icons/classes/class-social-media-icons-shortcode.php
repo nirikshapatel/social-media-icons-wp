@@ -50,7 +50,7 @@ if ( ! class_exists( 'Social_Media_Icons_Shortcode' ) ) {
 		 */
 		public static function social_media_icon_shortcode( $atts ) {
 			ob_start();
-			if ( isset( $atts['id'] ) && '' !== $atts['id'] ) {
+			if ( isset( $atts['id'] ) && '' !== $atts['id'] && 'publish' === get_post_status( $atts['id'] ) ) {
 				$_id = $atts['id'];
 
 				$smi_icons             = get_post_meta( $_id, 'smi_icons', true );

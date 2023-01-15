@@ -222,7 +222,7 @@ if ( ! class_exists( 'Social_Media_Icons_Metabox' ) ) {
 					</div>
 				</div>
 				<hr>
-				<h3><?php esc_html_e( 'Icon Style', 'social-media-icons' ); ?></h3>
+				<h3><?php esc_html_e( 'Icon Styles', 'social-media-icons' ); ?></h3>
 				<div class="smi-group-wrapper">
 					<div class="field-group alignment-option">
 						<label><?php esc_html_e( 'Alignment:', 'social-media-icons' ); ?></label>

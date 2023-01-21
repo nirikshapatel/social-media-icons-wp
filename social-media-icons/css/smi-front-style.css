@@ -60,6 +60,7 @@
 	transition: all var(--smi-hover-transition-time) ease;
 	line-height: 1;
 	text-decoration: none;
+	box-shadow: unset;
 }
 
 .smi-preview ul li:hover a {

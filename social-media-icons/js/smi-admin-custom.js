@@ -4,12 +4,11 @@ function preview_change() {
 		var border_width = jQuery( ".smi-metabox #smi_border_width" ).val();
 		var icon_bg_color = jQuery( '.smi-metabox #smi_icons_bg_color' ).val();
 		var icons_bg_hover_color = jQuery( '.smi-metabox #smi_icons_bg_hover_color' ).val();
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-width', jQuery( '.smi-metabox #smi_font_size' ).val() + 'px' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-width', jQuery( '.smi-metabox #smi_font_size' ).val() + 'px' );
 		if ( '0' === border_width  && ( '' === icon_bg_color || 'transparent' === icon_bg_color ) && ( '' === icons_bg_hover_color || 'transparent' === icons_bg_hover_color ) ) {
-			jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-width', 'unset' );
+			jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-width', 'unset' );
 		}
 	}, 100 );
-
 }
 
 /* Social media icon image upload */
@@ -136,19 +135,19 @@ jQuery( document ).ready( function() {
 	   			if ( undefined !== ui.color && undefined !== ui.color.toString() ) {
 	   				var _element = jQuery( this ).attr( 'id' );
 	   				if ( 'smi_icons_color' === _element ) {
-	   					jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-color', ui.color.toString() );
+	   					jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-color', ui.color.toString() );
 		   			} else if ( 'smi_hover_color' === _element ) {
-	   					jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-hover-color', ui.color.toString() );
+	   					jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-hover-color', ui.color.toString() );
 		   			} else if ( 'smi_icons_bg_color' === _element ) {
-	   					jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-bg-color', ui.color.toString() );
+	   					jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-bg-color', ui.color.toString() );
 	   					preview_change();
 		   			} else if ( 'smi_icons_bg_hover_color' === _element ) {
 		   				preview_change();
-	   					jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-bg-hover-color', ui.color.toString() );
+	   					jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-bg-hover-color', ui.color.toString() );
 		   			} else if ( 'smi_border_color' === _element ) {
-		   				jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-border-color', ui.color.toString() );
+		   				jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-border-color', ui.color.toString() );
 		   			} else if ( 'smi_border_hover_color' === _element ) {
-		   				jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-border-hover-color', ui.color.toString() );
+		   				jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-border-hover-color', ui.color.toString() );
 		   			}
 	   			}
 	   		},
@@ -156,19 +155,19 @@ jQuery( document ).ready( function() {
 	   			/* Apply clear event to all icons in preview */
 	   			var _element = ( undefined !== event.target.parentNode ) ? jQuery( event.target.parentNode ).find( '.smi-color-field' ).attr( 'id' ) : '';
 	   			if ( 'smi_icons_color' === _element ) {
-	   				jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-color', 'unset' );
+	   				jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-color', 'unset' );
 	   			} else if ( 'smi_hover_color' === _element ) {
-	   				jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-hover-color', 'unset' );
+	   				jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-hover-color', 'unset' );
 	   			} else if ( 'smi_icons_bg_color' === _element ) {
-	   				jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-bg-color', 'unset' );
+	   				jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-bg-color', 'unset' );
 	   				preview_change();
 	   			} else if ( 'smi_icons_bg_hover_color' === _element ) {
-	   				jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-bg-hover-color', 'unset' );
+	   				jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-bg-hover-color', 'unset' );
 	   				preview_change();
 	   			} else if ( 'smi_border_color' === _element ) {
-	   				jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-border-color', 'unset' );
+	   				jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-border-color', 'unset' );
 	   			} else if ( 'smi_border_hover_color' === _element ) {
-	   				jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-border-hover-color', 'unset' );
+	   				jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-border-hover-color', 'unset' );
 	   			}
 	   		},
 	   	} );
@@ -179,9 +178,9 @@ jQuery( document ).ready( function() {
 		var font_size = jQuery( this ).val();
 		font_size = ( '' !== font_size ) ? font_size : 0;
 		jQuery( this ).val( font_size );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-font-size', font_size + 'px' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-font-size', font_size + 'px' );
 		if ( 0 !== jQuery( '.smi-metabox #smi_border_width' ).val() ) {
-			jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-width', font_size + 'px' );
+			jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-width', font_size + 'px' );
 		}
 	} );
 
@@ -190,7 +189,7 @@ jQuery( document ).ready( function() {
 		var column_gap = jQuery( this ).val();
 		column_gap = ( '' !== column_gap ) ? column_gap : 0;
 		jQuery( this ).val( column_gap );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-column-gap', column_gap + 'px' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-column-gap', column_gap + 'px' );
 	} );
 
 	/* Apply row gap to icons preview */
@@ -198,7 +197,7 @@ jQuery( document ).ready( function() {
 		var row_gap = jQuery( this ).val();
 		row_gap = ( '' !== row_gap ) ? row_gap : 0;
 		jQuery( this ).val( row_gap );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-row-gap', row_gap + 'px' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-row-gap', row_gap + 'px' );
 	} );
 
 	/* Apply border width to icons preview */
@@ -206,7 +205,7 @@ jQuery( document ).ready( function() {
 		var border_width = jQuery( this ).val();
 		border_width = ( '' !== border_width ) ? border_width : 0;
 		jQuery( this ).val( border_width );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-border-width', border_width + 'px' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-border-width', border_width + 'px' );
 		preview_change();
 	} );
 
@@ -215,7 +214,7 @@ jQuery( document ).ready( function() {
 		var border_radius = jQuery( this ).val();
 		border_radius = ( '' !== border_radius ) ? border_radius : 0;
 		jQuery( this ).val( border_radius );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-border-radius', border_radius + '%' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-border-radius', border_radius + '%' );
 	} );
 
 	/* Apply padding top to icons preview */
@@ -223,7 +222,7 @@ jQuery( document ).ready( function() {
 		var padding_top = jQuery( this ).val();
 		padding_top = ( '' !== padding_top ) ? padding_top : 0;
 		jQuery( this ).val( padding_top );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-padding-top', padding_top + 'px' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-padding-top', padding_top + 'px' );
 	} );
 
 	/* Apply padding right to icons preview */
@@ -231,7 +230,7 @@ jQuery( document ).ready( function() {
 		var padding_right = jQuery( this ).val();
 		padding_right = ( '' !== padding_right ) ? padding_right : 0;
 		jQuery( this ).val( padding_right );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-padding-right', padding_right + 'px' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-padding-right', padding_right + 'px' );
 	} );
 
 	/* Apply padding bottom to icons preview */
@@ -239,7 +238,7 @@ jQuery( document ).ready( function() {
 		var padding_bottom = jQuery( this ).val();
 		padding_bottom = ( '' !== padding_bottom ) ? padding_bottom : 0;
 		jQuery( this ).val( padding_bottom );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-padding-bottom', padding_bottom + 'px' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-padding-bottom', padding_bottom + 'px' );
 	} );
 
 	/* Apply padding left to icons preview */
@@ -247,15 +246,15 @@ jQuery( document ).ready( function() {
 		var padding_left = jQuery( this ).val();
 		padding_left = ( '' !== padding_left ) ? padding_left : 0;
 		jQuery( this ).val( padding_left );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-padding-left', padding_left + 'px' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-padding-left', padding_left + 'px' );
 	} );
 
 	/* Apply alignment to icons preview */
 	jQuery( document ).on( "change", ".smi-metabox .smi_horizontal_alignment", function() {
 		var alignment = jQuery( this ).val();
 		var vertical_layout = jQuery( '.smi-metabox #smi_vertical_layout' ).is(':checked');
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-horizontal-alignment', ( true === vertical_layout ) ? 'unset' : alignment );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-vertical-alignment', ( true === vertical_layout ) ? alignment : 'unset' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-horizontal-alignment', ( true === vertical_layout ) ? 'unset' : alignment );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-vertical-alignment', ( true === vertical_layout ) ? alignment : 'unset' );
 	} );
 
 	/* Apply hover transition time to icons preview */
@@ -263,17 +262,17 @@ jQuery( document ).ready( function() {
 		var hover_transition_time = jQuery( this ).val();
 		hover_transition_time = ( '' !== hover_transition_time ) ? hover_transition_time : 0;
 		jQuery( this ).val( hover_transition_time );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-hover-transition-time', hover_transition_time + 's' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-hover-transition-time', hover_transition_time + 's' );
 	} );
 
 	/* Apply vertical layout to icons preview */
 	jQuery( document ).on( "change", ".smi-metabox #smi_vertical_layout", function() {
 		var vertical_layout = jQuery( this ).is(':checked');
 		var alignment = jQuery( '.smi-metabox .smi_horizontal_alignment:checked' ).val();
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-layout', ( true === vertical_layout ) ? 'column' : 'row' );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-icons-wrap', ( true === vertical_layout ) ? 'no-wrap' : 'wrap' );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-vertical-alignment', ( true === vertical_layout ) ? alignment : 'unset' );
-		jQuery( '.smi-preview .smi-preview-wrapper' ).css( '--smi-horizontal-alignment', ( true === vertical_layout ) ? 'unset' : alignment );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-layout', ( true === vertical_layout ) ? 'column' : 'row' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-icons-wrap', ( true === vertical_layout ) ? 'no-wrap' : 'wrap' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-vertical-alignment', ( true === vertical_layout ) ? alignment : 'unset' );
+		jQuery( '.smi-preview .smi-preview-wrapper' )[0].style.setProperty( '--smi-horizontal-alignment', ( true === vertical_layout ) ? 'unset' : alignment );
 	} );
 
 	/* Drag and drop icon to change order of icons. */

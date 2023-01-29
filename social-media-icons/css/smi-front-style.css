@@ -63,10 +63,13 @@
 	box-shadow: unset;
 }
 
+.smi-preview ul li a:focus,
+.smi-preview ul li a:hover,
 .smi-preview ul li:hover a {
 	color: var(--smi-hover-color) !important;
 	background-color: var(--smi-bg-hover-color);
 	border-color: var(--smi-border-hover-color);
+	box-shadow: unset;
 }
 
 .smi-preview ul li.icon-image a {
@@ -85,4 +88,5 @@
 	height: 100%;
 	width: 100%;
 	object-fit: contain;
+	box-shadow: unset;
 }

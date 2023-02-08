@@ -3,8 +3,8 @@
  * Plugin Name: Social Media Icons
  * Description: This plugin is used for add social icons and upload your own icon image with your own style using settings, that allow visitors to view your social profile and connect or follow to your site. Add shortcode to render icons.
  * Version: 1.0.0
- * Author: 
- * Developer: 
+ * Author: Niriksha Patel
+ * Developer: Niriksha Patel
  * Text Domain: social-media-icons
  * License: GNU General Public License v3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html

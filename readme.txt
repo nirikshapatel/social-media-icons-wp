@@ -1,4 +1,4 @@
-=== Social Media Icons ===
+=== Wp Social Media Icons ===
 Contributors: nirikshapatel05
 Tags: social media icons, image icon link, image icon, social link, icon link, social, link, media icon, social url, icons shortcode, custom icon style, icon style settings, sort icons, drag and drop icons, font awesome icons
 Requires at least: 4.7

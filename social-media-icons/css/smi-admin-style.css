@@ -452,8 +452,11 @@
 }
 
 @media screen and (max-width: 950px) {
-	.smi-preview .smi-preview-wrapper ul {
+	.smi-preview .smi-preview-wrapper {
 		max-height: 150px;
+	}
+
+	.smi-preview .smi-preview-wrapper ul {
 		padding: 20px;
 	}
 
@@ -471,7 +474,7 @@
 		top: 46px;
 	}
 
-	.smi-preview .smi-preview-wrapper ul {
+	.smi-preview .smi-preview-wrapper {
 		max-height: 100px;
 	}
 

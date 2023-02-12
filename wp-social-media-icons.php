@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Social Media Icons Wp
  * Description: This plugin is used for add social icons and upload your own icon image with your own style using settings, that allow visitors to view your social profile and connect or follow to your site. Add shortcode to render icons.
- * Version: 1.0.0
+ * Version: 0.1.0
  * Author: Niriksha Patel
  * Developer: Niriksha Patel
  * Text Domain: social-media-icons

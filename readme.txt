@@ -47,7 +47,7 @@ To install this plugin:
 == Screenshots ==
 
 1. Settings page 
-2. Admin Icon List page
+2. Admin icon list page
 3. Image icon setting page 
 4. Font awesome icon setting page 
 5. Add shortcode from editor to display
@@ -55,3 +55,10 @@ To install this plugin:
 7. Icon sorting
 8. Shortcode for render
 
+== Changelog ==
+
+* No Changelog.
+
+== Upgrade Notice ==
+
+* No Upgrade Notice.

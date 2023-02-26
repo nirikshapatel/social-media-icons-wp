@@ -1,6 +1,6 @@
 === Social Media Icons Wp ===
 Contributors: nirikshapatel05
-Tags: social media icons, image icon link, image icon, social link, icon link, social, link, media icon, social url, icons shortcode, custom icon style, icon style settings, sort icons, drag and drop icons, font awesome icons
+Tags: social media icons, image icons, font awesome icons, image icon link, social link, icon link, social, link, media icon, social url, icons shortcode, custom icon style, icon style settings, sort icons, drag and drop icons
 Requires at least: 4.7
 Tested up to: 6.1.1
 Stable tag: 0.1.0

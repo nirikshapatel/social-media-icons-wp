@@ -396,7 +396,7 @@ if ( ! class_exists( 'Social_Media_Icons_Metabox' ) ) {
 				return;
 			}
 
-			update_post_meta( $post_id, 'smi_icons', ( isset( $_POST['smi_icons'] ) && is_array( $_POST['smi_icons'] ) ) ? array_values( $_POST['smi_icons'] ) : array() ); /* phpcs:ignore */
+			update_post_meta( $post_id, 'smi_icons', array_values( sanitize_meta( 'smi_icons', wp_unslash( ( isset( $_POST['smi_icons'] ) && array( $_POST['smi_icons'] ) ) ? $_POST['smi_icons'] : array() ), 'social_media_icon' ) ) );
 			update_post_meta( $post_id, 'smi_column_gap', isset( $_POST['smi_column_gap'] ) ? sanitize_text_field( wp_unslash( $_POST['smi_column_gap'] ) ) : '' );
 			update_post_meta( $post_id, 'smi_row_gap', isset( $_POST['smi_row_gap'] ) ? sanitize_text_field( wp_unslash( $_POST['smi_row_gap'] ) ) : '' );
 			update_post_meta( $post_id, 'smi_font_size', isset( $_POST['smi_font_size'] ) ? sanitize_text_field( wp_unslash( $_POST['smi_font_size'] ) ) : '' );

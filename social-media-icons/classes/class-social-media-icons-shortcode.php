@@ -108,19 +108,18 @@ if ( ! class_exists( 'Social_Media_Icons_Shortcode' ) ) {
 							<?php
 							foreach ( $smi_icons as $key => $smi_icon ) {
 								if ( isset( $smi_icon['icon'] ) && '' !== $smi_icon['icon'] ) {
-									$_rel_attr = ( '' !== $rel_attr ? 'rel="' . $rel_attr . '"' : '' );
-									$target    = ( '1' === $link_target ? 'target=_blank' : '' );
+									$target = ( '1' === $link_target ? 'target=_blank' : '' );
 
 									if ( isset( $smi_icon['icon_type'] ) && 'icon' === $smi_icon['icon_type'] ) {
 										?>
 										<li title="<?php echo esc_attr( '1' === $show_tooltip_label ? ( '' !== $smi_icon['label'] ? $smi_icon['label'] : '' ) : '' ); ?>">
-											<a href="<?php echo esc_url( '' !== $smi_icon['url'] ? $smi_icon['url'] : '#' ); ?>" <?php echo esc_attr( $target ); ?> <?php echo ( $_rel_attr ); /* phpcs:ignore */ ?>><i class="<?php echo esc_attr( $smi_icon['icon'] ); ?>"></i></a>
+											<a href="<?php echo esc_url( '' !== $smi_icon['url'] ? $smi_icon['url'] : '#' ); ?>" <?php echo esc_attr( $target ); ?> rel="<?php echo esc_attr( $rel_attr ); ?>"><i class="<?php echo esc_attr( $smi_icon['icon'] ); ?>"></i></a>
 										</li>
 										<?php
 									} else {
 										?>
 										<li class="icon-image" title="<?php echo esc_attr( '1' === $show_tooltip_label ? ( '' !== $smi_icon['label'] ? $smi_icon['label'] : '' ) : '' ); ?>">
-											<a href="<?php echo esc_url( '' !== $smi_icon['url'] ? $smi_icon['url'] : '#' ); ?>" <?php echo esc_attr( $target ); ?> <?php echo ( $_rel_attr ); /* phpcs:ignore */ ?>><img src="<?php echo esc_url( $smi_icon['icon'] ); ?>"></a>
+											<a href="<?php echo esc_url( '' !== $smi_icon['url'] ? $smi_icon['url'] : '#' ); ?>" <?php echo esc_attr( $target ); ?> rel="<?php echo esc_attr( $rel_attr ); ?>"><img src="<?php echo esc_url( $smi_icon['icon'] ); ?>"></a>
 										</li>
 										<?php
 									}

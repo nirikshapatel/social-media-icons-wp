@@ -102,6 +102,10 @@
 	transition: all var(--smi-hover-transition-time) ease;
 }
 
+.smi-preview .smi-preview-wrapper ul li:empty {
+	display: none;
+}
+
 .smi-preview .smi-preview-wrapper ul li:hover {
 	color: var(--smi-hover-color) !important;
 	background-color: var(--smi-bg-hover-color);

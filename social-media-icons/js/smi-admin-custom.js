@@ -29,17 +29,20 @@ jQuery( document ).ready( function() {
 		    last_added_id = Math.max.apply( Math, icon_ids_arr );
 		}
 
+		var counter = parseInt( last_added_id ) + 1;
+
 		jQuery.ajax( {
 	        url: smi_admin_custom.ajaxurl,
 	        type: 'POST',
 	        data: {
-	            action : 'smi_add_icon',
+	            action: 'smi_add_icon',
 	            nonce: nonce,
-	            counter: parseInt( last_added_id ) + 1
+	            counter: counter
 	        }
 	    } )
 	    .done( function( response_str ) {
 	        jQuery( '.smi-metabox .multi-field-container' ).append( response_str );
+	        jQuery( '.smi-preview .smi-preview-wrapper ul' ).append( '<li data-id="'+ counter +'"></li>' );
 	    } );
 	} );
 

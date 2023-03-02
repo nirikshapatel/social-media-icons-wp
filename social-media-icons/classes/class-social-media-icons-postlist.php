@@ -61,6 +61,7 @@ if ( ! class_exists( 'Social_Media_Icons_Postlist' ) ) {
 		 * @access public
 		 *
 		 * @param Array $columns Columns data as array.
+		 * @return Array $columns Columns data as array.
 		 */
 		public static function manage_social_media_icon_posts_columns( $columns ) {
 			/* Add shortcode column */

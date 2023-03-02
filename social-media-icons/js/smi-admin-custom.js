@@ -11,8 +11,8 @@ function preview_change() {
 	}, 100 );
 }
 
-/* Social media icon image upload */
 jQuery( document ).ready( function() {
+
 	/* For add multiple icons */
 	jQuery( document ).on( 'click', '.smi-metabox .smi-add-icon', function() {
 		var nonce = jQuery( this ).attr( "data-nonce" );
@@ -116,14 +116,14 @@ jQuery( document ).ready( function() {
 
 	            /* For icons preview */
 	            var icon_num = _this.parents( '.multi-field-group' ).attr( "data-count" );
-				if ( jQuery( '.smi-preview .smi-preview-wrapper ul li[data-id='+ icon_num +']' ).length ) {
+				if ( jQuery( '.smi-preview .smi-preview-wrapper ul li[data-id=' + icon_num + ']' ).length ) {
 
-					if ( ! jQuery( '.smi-preview .smi-preview-wrapper ul li[data-id='+ icon_num +']' ).hasClass( 'icon-image' ) ) {
-						jQuery( '.smi-preview .smi-preview-wrapper ul li[data-id='+ icon_num +']' ).addClass( 'icon-image' );
+					if ( ! jQuery( '.smi-preview .smi-preview-wrapper ul li[data-id=' + icon_num + ']' ).hasClass( 'icon-image' ) ) {
+						jQuery( '.smi-preview .smi-preview-wrapper ul li[data-id=' + icon_num + ']' ).addClass( 'icon-image' );
 					}
-					jQuery( '.smi-preview .smi-preview-wrapper ul li[data-id='+ icon_num +']' ).html( '<img src="' + attachment.url + '">' );
+					jQuery( '.smi-preview .smi-preview-wrapper ul li[data-id=' + icon_num + ']' ).html( '<img src="' + attachment.url + '">' );
 				} else {
-					jQuery( '.smi-preview .smi-preview-wrapper ul' ).append( '<li class="icon-image" data-id="'+ parseInt( icon_num ) +'"><img src="' + attachment.url + '"></li>' );
+					jQuery( '.smi-preview .smi-preview-wrapper ul' ).append( '<li class="icon-image" data-id="' + parseInt( icon_num ) + '"><img src="' + attachment.url + '"></li>' );
 				}
             }
         } )

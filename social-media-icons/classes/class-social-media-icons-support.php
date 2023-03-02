@@ -65,7 +65,7 @@ if ( ! class_exists( 'Social_Media_Icons_Support' ) ) {
 		 * @param String $file Full path to the file.
 		 * @param String $filename File name.
 		 * @param Array  $mimes Mimes as array.
-		 * @return array of file data
+		 * @return Array of file data
 		 */
 		public static function wp_check_filetype_and_ext( $data, $file, $filename, $mimes ) {
 			$filetype = wp_check_filetype( $filename, $mimes );
@@ -85,6 +85,7 @@ if ( ! class_exists( 'Social_Media_Icons_Support' ) ) {
 		 * @access public
 		 *
 		 * @param Array $mimes Mimes data as array.
+		 * @return Array $mimes Mimes data as array.
 		 */
 		public static function upload_mimes( $mimes ) {
 			$mimes['svg'] = 'image/svg+xml';

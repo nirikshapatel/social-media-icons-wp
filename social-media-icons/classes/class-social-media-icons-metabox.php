@@ -318,8 +318,7 @@ if ( ! class_exists( 'Social_Media_Icons_Metabox' ) ) {
 		}
 
 		/**
-		 * Function to handle add_meta_boxes action.
-		 * Add meta box.
+		 * Ajax request for add new social icon group.
 		 *
 		 * @since 1.0.0
 		 * @static
@@ -388,7 +387,7 @@ if ( ! class_exists( 'Social_Media_Icons_Metabox' ) ) {
 		 * Function to handle save_post action
 		 * Save meta box content.
 		 *
-		 * @param int $post_id Post ID.
+		 * @param Integer $post_id Post ID.
 		 */
 		public static function smi_save_meta_box( $post_id ) {
 

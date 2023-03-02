@@ -47,6 +47,8 @@ if ( ! class_exists( 'Social_Media_Icons' ) ) {
 		 * @since 1.0.0
 		 * @static
 		 * @access public
+		 *
+		 * @return Return an instance of base class.
 		 */
 		public static function instance() {
 			if ( null === self::$instance ) {

@@ -22,7 +22,7 @@ if ( ! class_exists( 'Social_Media_Icons_Postlist' ) ) {
 		/**
 		 * Function to add hooks and filters.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 */
@@ -56,7 +56,7 @@ if ( ! class_exists( 'Social_Media_Icons_Postlist' ) ) {
 		/**
 		 * Add column in social media icons post list
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 *
@@ -72,7 +72,7 @@ if ( ! class_exists( 'Social_Media_Icons_Postlist' ) ) {
 		/**
 		 * Add column value in social media icons post list.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 *

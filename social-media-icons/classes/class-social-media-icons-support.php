@@ -22,7 +22,7 @@ if ( ! class_exists( 'Social_Media_Icons_Support' ) ) {
 		/**
 		 * Function to add hooks and filters.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 */
@@ -57,7 +57,7 @@ if ( ! class_exists( 'Social_Media_Icons_Support' ) ) {
 		 * Function to handle wp_check_filetype_and_ext filter.
 		 * Determine the real file type of a file.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 *
@@ -80,7 +80,7 @@ if ( ! class_exists( 'Social_Media_Icons_Support' ) ) {
 		 * Function to handle upload_mimes filter.
 		 * Allow SVG
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 *

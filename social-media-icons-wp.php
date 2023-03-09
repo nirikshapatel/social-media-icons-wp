@@ -34,7 +34,7 @@ if ( ! function_exists( 'social_media_icons_init' ) ) {
 	/**
 	 * Function to initialize the plugin.
 	 *
-	 * @since 1.0.0
+	 * @since 0.1.0
 	 */
 	function social_media_icons_init() {
 		Social_Media_Icons::instance();

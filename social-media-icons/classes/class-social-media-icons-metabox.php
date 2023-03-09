@@ -21,7 +21,7 @@ if ( ! class_exists( 'Social_Media_Icons_Metabox' ) ) {
 		/**
 		 * Function to add hooks and filters.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 */
@@ -65,7 +65,7 @@ if ( ! class_exists( 'Social_Media_Icons_Metabox' ) ) {
 		 * Function to handle add_meta_boxes action.
 		 * Add meta box.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 */
@@ -82,6 +82,10 @@ if ( ! class_exists( 'Social_Media_Icons_Metabox' ) ) {
 		/**
 		 * Meta box for display shortcode.
 		 *
+		 * @since 0.1.0
+		 * @static
+		 * @access public
+		 *
 		 * @param WP_Post $post Current post object.
 		 */
 		public static function shortcode_callback( $post ) {
@@ -97,6 +101,10 @@ if ( ! class_exists( 'Social_Media_Icons_Metabox' ) ) {
 
 		/**
 		 * Meta box for icon settings.
+		 *
+		 * @since 0.1.0
+		 * @static
+		 * @access public
 		 *
 		 * @param WP_Post $post Current post object.
 		 */
@@ -320,7 +328,7 @@ if ( ! class_exists( 'Social_Media_Icons_Metabox' ) ) {
 		/**
 		 * Ajax request for add new social icon group.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 */
@@ -335,7 +343,7 @@ if ( ! class_exists( 'Social_Media_Icons_Metabox' ) ) {
 		/**
 		 * Function to add social icon group html.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 *
@@ -386,6 +394,10 @@ if ( ! class_exists( 'Social_Media_Icons_Metabox' ) ) {
 		/**
 		 * Function to handle save_post action
 		 * Save meta box content.
+		 *
+		 * @since 0.1.0
+		 * @static
+		 * @access public
 		 *
 		 * @param Integer $post_id Post ID.
 		 */

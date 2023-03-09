@@ -22,7 +22,7 @@ if ( ! class_exists( 'Social_Media_Icons_Shortcode' ) ) {
 		/**
 		 * Function to add hooks and filters.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 */
@@ -42,7 +42,7 @@ if ( ! class_exists( 'Social_Media_Icons_Shortcode' ) ) {
 		/**
 		 * Make shortcode for social media icons
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 *

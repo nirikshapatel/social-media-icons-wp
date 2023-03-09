@@ -21,7 +21,7 @@ if ( ! class_exists( 'Social_Media_Icons_Scripts' ) ) {
 		/**
 		 * Function to add hooks and filters.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 */
@@ -54,7 +54,7 @@ if ( ! class_exists( 'Social_Media_Icons_Scripts' ) ) {
 		 * Function to handle admin_enqueue_scripts action.
 		 * Load scripts and styles for back end.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 */
@@ -82,7 +82,7 @@ if ( ! class_exists( 'Social_Media_Icons_Scripts' ) ) {
 		 * Function to handle wp_enqueue_scripts action.
 		 * Load scripts and styles for front end.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 */

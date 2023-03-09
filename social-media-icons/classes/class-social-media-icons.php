@@ -21,7 +21,7 @@ if ( ! class_exists( 'Social_Media_Icons' ) ) {
 		/**
 		 * Instance of the plugin base class
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access protected
 		 * @var Single instance of the class.
@@ -32,7 +32,7 @@ if ( ! class_exists( 'Social_Media_Icons' ) ) {
 		 * Instantiates the plugin.
 		 * Include all the files needed for the plugin.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 */
@@ -44,7 +44,7 @@ if ( ! class_exists( 'Social_Media_Icons' ) ) {
 		 * Function to return Social Media Icons instance.
 		 * Ensures only one instance of plugin is loaded or can be loaded.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 *
@@ -60,7 +60,7 @@ if ( ! class_exists( 'Social_Media_Icons' ) ) {
 		/**
 		 * Function to load all the plugin files.
 		 *
-		 * @since 1.0.0
+		 * @since 0.1.0
 		 * @static
 		 * @access public
 		 */

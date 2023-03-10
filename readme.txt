@@ -50,10 +50,10 @@ To install this plugin:
 2. Admin icon list page
 3. Image icon setting page 
 4. Font awesome icon setting page 
-5. Add shortcode from editor to display
-6. Render icons at front side
-7. Icon sorting
-8. Shortcode for render
+5. Shortcode preview in admin
+6. Icon sorting
+7. Add shortcode for render
+8. Render icons at front side
 
 == Changelog ==
 

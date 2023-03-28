@@ -1,6 +1,6 @@
 === Social Media Icons Wp ===
 Contributors: nirikshapatel05
-Tags: social media icons, image icons, font awesome icons, image icon link, social link, icon link, social, link, media icon, social url, icons shortcode, custom icon style, icon style settings, sort icons, drag and drop icons
+Tags: image icons, font awesome icons, social media icons, image icon link, social link, icon link, social, link, media icon, social url, icons shortcode, custom icon style, icon style settings, sort icons, drag and drop icons
 Requires at least: 4.7
 Tested up to: 6.1.1
 Stable tag: 0.1.0
@@ -43,6 +43,11 @@ To install this plugin:
 * Search for a plugin with the search bar in the top right corner. A number of results will appear.
 * After finding the plugin in the results, click Install Now. You can also click the plugin name to view more details about it.
 * To use the plugin, need to activate it. When the installation is finished, click Activate.
+
+== Demos ==
+
+Try demo here
+[https://tastewp.com/new?pre-installed-plugin-slug=social-media-icons-wp&redirect=edit.php%3Fpost_type%3Dsocial_media_icon&ni=true](https://tastewp.com/new?pre-installed-plugin-slug=social-media-icons-wp&redirect=edit.php%3Fpost_type%3Dsocial_media_icon&ni=true)
 
 == Screenshots ==
 

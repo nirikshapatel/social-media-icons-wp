@@ -46,8 +46,7 @@ To install this plugin:
 
 == Demos ==
 
-Try demo here
-[https://tastewp.com/new?pre-installed-plugin-slug=social-media-icons-wp&redirect=edit.php%3Fpost_type%3Dsocial_media_icon&ni=true](https://tastewp.com/new?pre-installed-plugin-slug=social-media-icons-wp&redirect=edit.php%3Fpost_type%3Dsocial_media_icon&ni=true)
+[Try Demo Here](https://tastewp.com/new?pre-installed-plugin-slug=social-media-icons-wp&redirect=edit.php%3Fpost_type%3Dsocial_media_icon&ni=true)
 
 == Screenshots ==
 

@@ -2,7 +2,7 @@
 Contributors: nirikshapatel05
 Tags: image icons, font awesome icons, social media icons, image icon link, social link, icon link, social, link, media icon, social url, icons shortcode, custom icon style, icon style settings, sort icons, drag and drop icons
 Requires at least: 4.7
-Tested up to: 6.5.5
+Tested up to: 6.6.2
 Stable tag: 0.1.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html

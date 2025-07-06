@@ -1,39 +1,37 @@
-=== Social Media Icons Wp ===
+=== Social Media Icons WP – Add Custom Social Icons & Links with Shortcode ===
 Contributors: nirikshapatel05
-Tags: image icons, font awesome icons, social media icons, image icon link, social link, icon link, social, link, media icon, social url, icons shortcode, custom icon style, icon style settings, sort icons, drag and drop icons
+Tags: social icons, social media, icon links, image icons, font awesome, custom icons, shortcode icons, svg icons, drag and drop, social profiles, social buttons
 Requires at least: 4.7
 Tested up to: 6.8.1
 Stable tag: 0.1.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-This plugin is used for add social icons and upload your own icon image with your own style.
+Add social media icons using Font Awesome or custom images. Easily sort, style, and display icons anywhere via shortcode.
 
 == Description ==
 
-This plugin is used for add social icons and upload your own icon image with your own style using settings, that allow visitors to view your social profile and connect or follow to your site. Add shortcode to render icons.
+Social Media Icons WP lets you easily display your social profiles using a shortcode. Choose from 150+ Font Awesome icons or upload your own SVG or image icons. You can customize the icon style, color, spacing, and layout, and sort them with drag and drop. Ideal for bloggers, businesses, or developers who want full control over their social links.
 
-* You can use many icons or own image to add links to anything you want.
-* Sort icons by Drag & Drop
-* Live preview of icons when set
-* Use shortcode to render icons like header, footer, sidebar, post, page wherever you want.
+* Upload your own icons or choose from Font Awesome
+* Drag-and-drop sorting of icons
+* Live preview while customizing
+* Shortcode support for use in headers, footers, posts, or sidebars
 * Available 150 + font awesome icons
-* Allow svg file support for image
-* Vertical Layout Option
-* Customize the icons style
-	* Icons color settings
-	* Hover icon color settings 
+* SVG support for icons
+* Vertical and horizontal layouts
+* Fully customizable:
+	* Icons color
+	* Hover icon color 
 	* Size of the icons
-	* Border Settings
+	* Border
 	* Alignment option
 	* Horizontal / Vertical spacing between icons
 	* Hover transition duration option
 	* Hover Effect
 	* Icon shape style
-* Seperate style for multiple place
-* Enable / Disable the links to open in a new tab
-* Enabled / Disabled option for icons tooltip label
-* Rel attribute option
+* Separate styles for different shortcode placements
+* Open links in new tab, set rel attributes, enable tooltips
 
 == Installation ==
 
@@ -61,7 +59,8 @@ To install this plugin:
 
 == Changelog ==
 
-* No Changelog.
+= 0.1.0 =
+* Initial release of Social Media Icons WP plugin.
 
 == Upgrade Notice ==
 
